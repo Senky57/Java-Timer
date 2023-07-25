@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane prefHeight="161.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="184.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="424.0" minWidth="10.0" prefWidth="416.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;">
+               <children>
+                  <ImageView fitHeight="224.0" fitWidth="212.0" layoutX="32.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/hourglass.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F0623F;" GridPane.columnIndex="1">
+               <children>
+                  <StackPane prefHeight="246.0" prefWidth="424.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane fx:id="panelOdpoctu" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E0453C;">
+                           <children>
+                              <GridPane prefHeight="246.0" prefWidth="424.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <GridPane prefHeight="200.0" prefWidth="424.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="147.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label text="Hodiny" textFill="#ffffffd6" GridPane.halignment="CENTER">
+                                                   <font>
+                                                      <Font name="HoloLens MDL2 Assets" size="27.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Minuty" textFill="#ffffffd6" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                                   <font>
+                                                      <Font name="HoloLens MDL2 Assets" size="27.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Sekundy" textFill="#ffffffd6" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                                   <font>
+                                                      <Font name="HoloLens MDL2 Assets" size="27.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FF523E;" GridPane.rowIndex="1">
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <GridPane.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </GridPane.margin>
+                                                   <children>
+                                                      <Label fx:id="popisekHod" layoutX="39.0" layoutY="35.0" prefHeight="58.0" prefWidth="44.0" text="00">
+                                                         <font>
+                                                            <Font size="40.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane prefHeight="161.0" prefWidth="151.0" style="-fx-background-color: #FF523E;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </GridPane.margin>
+                                                   <children>
+                                                      <Label fx:id="popisekMin" layoutX="39.0" layoutY="35.0" text="00">
+                                                         <font>
+                                                            <Font size="40.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FF523E;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </GridPane.margin>
+                                                   <children>
+                                                      <Label fx:id="popisekSek" layoutX="39.0" layoutY="35.0" text="00">
+                                                         <font>
+                                                            <Font size="40.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <GridPane prefHeight="30.0" prefWidth="424.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#zastaveniCasovace" styleClass="tlacitkoStart" stylesheets="@style.css" text="Stop" GridPane.halignment="CENTER">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#pauzaCasovace" styleClass="tlacitkoStart" stylesheets="@style.css" text="Pause" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#resetCasovace" styleClass="tlacitkoStart" stylesheets="@style.css" text="Reset" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="panelNastaveni" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E0453C;">
+                           <children>
+                              <GridPane prefHeight="246.0" prefWidth="424.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="186.0" minHeight="10.0" prefHeight="186.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <GridPane prefHeight="188.0" prefWidth="424.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Hodiny" textFill="#ffffffd6" GridPane.halignment="CENTER">
+                                             <font>
+                                                <Font name="HoloLens MDL2 Assets" size="27.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Minuty" textFill="#ffffffd6" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="HoloLens MDL2 Assets" size="27.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Sekundy" textFill="#ffffffd6" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="HoloLens MDL2 Assets" size="27.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="comboHod" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                          <ComboBox fx:id="comboMin" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                          <ComboBox fx:id="comboSek" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                       </children>
+                                    </GridPane>
+                                    <Button fx:id="tlacitkoStart" mnemonicParsing="false" onAction="#zapnutiCasovace" prefHeight="39.0" prefWidth="176.0" styleClass="tlacitkoStart" stylesheets="@style.css" text="Start" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

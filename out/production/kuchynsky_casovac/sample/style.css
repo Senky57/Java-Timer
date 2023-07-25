@@ -1,0 +1,11 @@
+.tlacitkoStart{
+    -fx-text-fill: black;
+    -fx-background-color: #F5BEB3;
+    -fx-border-color: black;
+}
+.tlacitkoStart:hover{
+    -fx-background-color: #E03C3D;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
